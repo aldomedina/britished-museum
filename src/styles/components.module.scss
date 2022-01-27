@@ -1,0 +1,9 @@
+@import "./mixins.scss";
+.container {
+  margin: 0 auto;
+  padding: 0 50px;
+  max-width: 1460px;
+  @include respond-to("mobile") {
+    padding: 0 30px;
+  }
+}
