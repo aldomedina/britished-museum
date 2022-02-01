@@ -1,17 +1,10 @@
 import React from "react";
+import Header from "../../components/Header";
 
 function App() {
   return (
     <div>
-      <header>
-        <div>
-          <div>Logo</div>
-          <nav>
-            <div>secondary nav</div>
-            <div>primary nav</div>
-          </nav>
-        </div>
-      </header>
+      <Header />
       <div>
         <section>hero</section>
         <section>featured</section>
