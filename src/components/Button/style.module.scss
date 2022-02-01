@@ -1,0 +1,17 @@
+.button {
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  background-image: none;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: 500;
+  line-height: inherit;
+  display: inline-block;
+  transition: 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition-property: background, color;
+  font-size: inherit;
+}

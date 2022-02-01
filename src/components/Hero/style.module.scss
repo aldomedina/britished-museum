@@ -1,0 +1,56 @@
+.background {
+  height: 100vh;
+  top: 0;
+  z-index: -1;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  padding-bottom: 0;
+  .bgImage {
+    position: fixed;
+    height: calc(100vh - 1px);
+    width: 100%;
+    object-fit: cover;
+    object-position: center right;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    &::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.05);
+      pointer-events: none;
+    }
+  }
+}
+
+.body {
+  height: auto;
+  max-height: none;
+  min-height: 640px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 40px 0;
+  .card {
+    width: 320px;
+    margin: 0;
+    padding: 30px;
+    background-color: #fff;
+    color: #000;
+    position: relative;
+    z-index: 1;
+    h2 {
+      margin-top: 0;
+      font-size: 1.66667rem;
+      line-height: 1.26667;
+      width: 100%;
+      text-shadow: none;
+    }
+  }
+}

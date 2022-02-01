@@ -10,7 +10,7 @@ const Header = () => {
     <header className={style.header}>
       <div className={components.container}>
         <div className={style.wrapper}>
-          <img className={style.logo} src={logo} />
+          <img className={style.logo} src={logo} alt="logo" />
           <nav>
             <ul className={classNames(style.menu, style.secondaryMenu)}>
               <li>Shop </li>

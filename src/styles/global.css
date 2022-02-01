@@ -3,6 +3,13 @@ html {
   line-height: 1.55556;
 }
 
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
 html,
 body {
   padding: 0;
@@ -16,4 +23,23 @@ html,
 body,
 #root {
   height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0 0 0.5em;
+  font-family: "Helvetica Neue", "helvetica", "arial", sans-serif;
+  font-weight: 500;
 }
