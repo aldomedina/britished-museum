@@ -15,7 +15,7 @@ const Hero = () => {
         <div className={style.body}>
           <div className={style.card}>
             <h2 className={components.header2}>
-              Welcome to the Britished Museum
+              Welcome to the Britished Museum, gonorreas
             </h2>
             <p>
               Experience cultures across the globe, from the dawn of human
