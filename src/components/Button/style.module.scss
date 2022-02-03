@@ -1,6 +1,6 @@
 .button {
   text-align: left;
-  width: 100%;
+
   cursor: pointer;
   background-image: none;
   background-color: #000;
@@ -14,4 +14,9 @@
   transition: 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
   transition-property: background, color;
   font-size: inherit;
+}
+.regular {
+  width: 100%;
+}
+.block {
 }

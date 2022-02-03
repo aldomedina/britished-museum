@@ -1,0 +1,34 @@
+.wrapper {
+  background: #000;
+  color: white;
+  .innerWrapper {
+    padding: 60px 0;
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .body {
+      display: flex;
+      gap: 3.3rem;
+      .card {
+        height: 432px;
+
+        background-color: #1d1d1d;
+        flex: 1;
+        display: flex;
+        .content {
+          flex: 1;
+          .innerContent {
+            margin: 30px;
+          }
+        }
+        .image {
+          flex: 1;
+
+          background: hotpink;
+        }
+      }
+    }
+  }
+}

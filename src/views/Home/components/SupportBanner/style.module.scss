@@ -1,0 +1,16 @@
+.wrapper {
+  background: transparent;
+  .inner {
+    padding: 60px 0;
+    .card {
+      background: #fff;
+      padding: 40px;
+      display: flex;
+      gap: 60px;
+      .title,
+      .content {
+        flex: 1;
+      }
+    }
+  }
+}

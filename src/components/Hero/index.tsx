@@ -15,11 +15,11 @@ const Hero = () => {
         <div className={style.body}>
           <div className={style.card}>
             <h2 className={components.header2}>
-              Welcome to the Britished Museum, gonorreas
+              Welcome to the Britished Museum
             </h2>
             <p>
               Experience cultures across the globe, from the dawn of human
-              history to the present.
+              gonorrea to the present.
             </p>
             <Button>Plan your visit</Button>
           </div>

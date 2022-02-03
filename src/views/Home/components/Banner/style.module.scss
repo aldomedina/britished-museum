@@ -1,0 +1,16 @@
+.banner {
+  color: white;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), #000 40%);
+  .innerSection {
+    padding: 60px 0;
+    display: flex;
+    border-bottom: 1px solid #4a4a4a;
+    .title {
+      flex: 2;
+    }
+    .content {
+      flex: 1;
+      padding-left: 60px;
+    }
+  }
+}

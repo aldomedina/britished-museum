@@ -1,23 +1,26 @@
 import React from "react";
+import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Hero from "../../components/Hero";
+import HomeBanner from "./components/Banner";
+import CollectionSection from "./components/Collection";
+import Exhibition from "./components/Exhibition";
+import SupportBanner from "./components/SupportBanner";
 
-function App() {
+const HomePage = () => {
   return (
     <div>
       <Header />
       <div>
         <Hero />
-        <section style={{ height: "30vh", background: "rgba(255,0,0,.4)" }}>
-          featured
-        </section>
-        <section>banner</section>
-        <section>explore the collection</section>
-        <section>banner</section>
+        <HomeBanner />
+        <Exhibition />
+        <SupportBanner />
+        <CollectionSection />
       </div>
-      <footer>Footer</footer>
+      <Footer />
     </div>
   );
-}
+};
 
-export default App;
+export default HomePage;

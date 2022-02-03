@@ -1,11 +1,19 @@
+import classNames from "classnames";
 import React from "react";
 import style from "./style.module.scss";
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
+type StyleTypes = "regular" | "block";
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  styleType?: StyleTypes;
+}
 
-const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
+const Button: React.FC<ButtonProps> = ({
+  children,
+  styleType = "regular",
+  ...props
+}) => {
   return (
-    <button {...props} className={style.button}>
+    <button {...props} className={classNames(style.button, style[styleType])}>
       {children}
     </button>
   );
