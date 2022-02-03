@@ -4,13 +4,17 @@ import logo from "../../assets/logo.svg";
 
 import style from "./style.module.scss";
 import components from "../../styles/components.module.scss";
+import { Link } from "react-router-dom";
+import paths from "../../containers/Router/paths";
 
 const Header = () => {
   return (
     <header className={style.header}>
       <div className={components.container}>
         <div className={style.wrapper}>
-          <img className={style.logo} src={logo} alt="logo" />
+          <Link to={paths.home()}>
+            <img className={style.logo} src={logo} alt="logo" />
+          </Link>
           <nav>
             <ul className={classNames(style.menu, style.secondaryMenu)}>
               <li>Shop </li>
@@ -18,12 +22,14 @@ const Header = () => {
               <li>Donate </li>
             </ul>
             <ul className={classNames(style.menu, style.primaryMenu)}>
-              <li> Visit</li>
-              <li> Exhibitions and events</li>
-              <li> Collection</li>
-              <li> Learn</li>
-              <li> Membership</li>
-              <li> Support us </li>
+              <li>Visit</li>
+              <li>Exhibitions and events</li>
+              <li>
+                <Link to={paths.collection()}>Collection</Link>
+              </li>
+              <li>Learn</li>
+              <li>Membership</li>
+              <li>Support us </li>
             </ul>
           </nav>
         </div>
